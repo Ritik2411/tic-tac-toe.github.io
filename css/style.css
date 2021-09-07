@@ -12,9 +12,10 @@ body{
     max-width: 1440px;
     height: 800px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    padding: 80px;
 }
 
 .left{
@@ -23,6 +24,7 @@ body{
 
 .title{
     padding-bottom: 25px;
+    max-width: 500px;
 }
 
 h1{
@@ -122,4 +124,46 @@ h1{
 
 .tile-winner span{
     color: #23CE6B;
+}
+
+@media only screen and (max-width:1200px) {
+    .wrapper{
+        flex-direction: column;
+    }
+
+    .right{
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width:700px){
+
+    h1{
+        font-size: 30px;
+    }
+
+    .game{
+        width: 335px;
+        height: 400px;
+    }
+
+    .board-tile{
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width:280px){
+
+    h1{
+        font-size: 30px;
+    }
+
+    .game{
+        width: 260px;
+        height: 400px;
+    }
+
+    .board-tile{
+        font-size: 40px;
+    }
 }
